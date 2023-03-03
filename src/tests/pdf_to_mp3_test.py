@@ -8,8 +8,7 @@ def test_read_pdf():
     assert text == "This is a sample file  "
 
 def test_convert_text_to_mp3():
-    if os.path.exists("/home/output/output_test.mp3"):
-        os.remove("/home/output/output_test.mp3")
+    test_output_file = "src/tests/test_resources/output_test.mp3"
     text = "Hello, world!"
-    convert_text_to_mp3(text,"output_test.mp3")
-    assert os.path.exists('/home/output/output_test.mp3')
+    convert_text_to_mp3(text,test_output_file)
+    assert os.path.exists(test_output_file)

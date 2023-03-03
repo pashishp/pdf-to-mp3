@@ -1,8 +1,7 @@
 import pypdf
 import pyttsx3
-import os
 
-output_file = "output.mp3"
+output_file = "/home/output/output.mp3"
 pdf_file = "Sample.pdf"
 
 
@@ -22,12 +21,7 @@ def convert_text_to_mp3(text, output_file):
     engine.setProperty('voice', voice.id)
     engine.setProperty('rate',120)
     engine.say(text)
-    output_dir = "/home/output"
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    output_path = os.path.join(output_dir, output_file)
-    print(output_path)
-    engine.save_to_file(text, output_path)
+    engine.save_to_file(text, output_file)
     engine.runAndWait()
 
 if __name__ == '__main__':
