@@ -2,9 +2,14 @@
 This project can convert a pdf file to mp3 file.
 
 ## Information on libraries used
-https://pypi.org/project/pyttsx3/
-https://pypi.org/project/pypdf/
+https://pypi.org/project/pyttsx3/   
+https://pypi.org/project/pypdf/   
+https://mypy.readthedocs.io/en/stable/getting_started.html   
+https://flake8.pycqa.org/en/latest/index.html#quickstart   
+https://pycqa.github.io/isort/   
+https://pypi.org/project/autopep8/   
 
+## Voices Information 
 There are multiple voices available some of them are   
 afrikaans, aragonese, bulgarian, bengali, bosnian, catalan, czech, welsh, danish, german, greek, default, english, en-scottish, english-north...
 
