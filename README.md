@@ -5,6 +5,16 @@ This project can convert a pdf file to mp3 file.
 https://pypi.org/project/pyttsx3/
 https://pypi.org/project/pypdf/
 
+There are multiple voices available some of them are   
+afrikaans, aragonese, bulgarian, bengali, bosnian, catalan, czech, welsh, danish, german, greek, default, english, en-scottish, english-north...
+
+```
+import pyttsx3
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+for voice in voices:
+    print(voice.id)
+```
 
 ## Installtion additional applications/program
 
@@ -29,3 +39,15 @@ For CentOS/Fedora:
 ```
 sudo yum install espeak
 ```
+
+## Run using make
+```
+make help
+
+convert-pdf                    Converts pdf to mp3
+help                           Show available targets
+lint                           Lint the code
+test                           Run tests
+tidy                           Tidy code
+```
+
