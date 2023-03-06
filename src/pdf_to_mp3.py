@@ -3,7 +3,6 @@ import sys
 import pypdf
 import pyttsx3  # type: ignore
 
-# output_file = "output.mp3"
 pdf_file = "Sample.pdf"
 
 
@@ -28,7 +27,6 @@ def convert_text_to_mp3(text, output_file):
 
 try:
     text = read_pdf(sys.argv[1])
-    output_file = sys.argv[1]
-    convert_text_to_mp3(text, output_file)
+    convert_text_to_mp3(text, "sound_output.mp3")
 except Exception as error:
     print("Error occurred: ", str(error))

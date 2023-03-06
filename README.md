@@ -21,7 +21,7 @@ for voice in voices:
     print(voice.id)
 ```
 
-## Installtion additional applications/program
+## Installation additional applications/program
 
 ### FFmpeg is a separate program that is required for pyttsx3 to convert the speech output to MP3 format.
 
